@@ -41,4 +41,31 @@ define(['jquery', 'jqueryCookie', 'template'], function ($, undefined, template)
       $('.aside').prepend(userInfoHTML);
 
     })();
+
+
+    // 导航栏下拉列表
+    (function() {
+      // 点击具有下拉列表功能的a标签 那么暂时隐藏对应的ul列表
+      $('.nav-slide').on('click', function() {
+        $(this).next().slideToggle();
+      });
+    })();
+
+    // 根据页面定位有车导航的焦点
+    (function() {
+      /***
+       * 
+       * 根据一些页面规律进行焦点
+       * 1\获取当前页面的路径
+       * 2\ 移除所有a标签的active类名
+       * 3\ 把路径当做属性选择页面对应的a标签 给对应的a标签单独添加
+       * 
+       */
+
+      var pathHref = {
+
+      };
+      var patname =  location.pathname;
+      var aHref = pathHref[pathname]? pathHref[pathname]: pathname;
+    })();
 });
