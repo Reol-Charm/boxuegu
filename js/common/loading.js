@@ -1,7 +1,7 @@
 define(['jquery'], function($) {
-  
-  // ajax-loading
-  (function() {
+	
+	// ajax-loading
+	(function() {
 		
 		$(document).on('ajaxStart', function() {
 			$('.overlay').show();
@@ -10,4 +10,5 @@ define(['jquery'], function($) {
 		});
 		
 	})();
+	
 });
