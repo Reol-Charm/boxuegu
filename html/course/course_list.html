@@ -76,18 +76,17 @@
                         <span>类别：{{ course.cg_name }}</span>
                     </li>
                     <li>
-                        <!-- 直接写random的话模板引擎会以为你是在访问random变量，加上后面有个冒号 所以在用这个函数的时候,必须加第一个参数-->
                         <span>课时：{{ '' | random:'10, 200' }}</span>
                         <span>学员：{{ '' | random:'0, 5000' }}</span>
                     </li>
                     <li>
-                        <span>浏览：{{ '' | random:'0, 100000' }}</span>
+                        <span>浏览：{{ '' | random:'0, 200000' }}</span>
                         <span></span>
                     </li>
                 </ul>
             </div>
         </div>
-       {{ /each }}
+        {{ /each }}
     </script>
 	<!-- 页面公共头部 -->
 	<?php include($_SERVER['DOCUMENT_ROOT'].'/html/common/script.html')?>
